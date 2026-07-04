@@ -1,0 +1,67 @@
+This project includes and derives from third-party code. Their licenses and
+notices follow. Read this alongside the repository LICENSE (MIT).
+
+================================================================================
+1) Portions derived from mako-357/vectorworks-mcp
+   https://github.com/mako-357/vectorworks-mcp
+   MIT License — Copyright (c) 2026 Mako
+
+The Unix-domain-socket bridge and the JSON command-dispatch design in this
+project are derived from mako-357/vectorworks-mcp. The upstream project in turn
+credits the "autocad-mcp" project for the socket-bridge architecture.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+2) JSON for Modern C++ (nlohmann/json)
+   https://github.com/nlohmann/json
+   MIT License — Copyright (c) 2013-2023 Niels Lohmann
+
+The plugin uses nlohmann/json, which is supplied as a single header by the
+Vectorworks SDK. No nlohmann/json source is redistributed in this repository;
+it is a build-time dependency you obtain via the SDK.
+
+(nlohmann/json is provided under the MIT License, the full text of which is
+reproduced in section 1 above.)
+
+================================================================================
+3) Vectorworks SDK boundary — IMPORTANT
+
+The C++ plugin in this repository is derived from the Vectorworks SDK
+"ProcessResources" menu-extension sample and depends on the Vectorworks SDK.
+The Vectorworks SDK is proprietary and is licensed under the Vectorworks SDK
+License Agreement. It is NOT covered by this project's MIT license.
+
+This repository does NOT include, and may NOT be used to redistribute:
+  * any Vectorworks SDK header files (*.h) — these are confidential
+    "Header File Information" under the SDK license;
+  * any compiled plugin binary (*.vwlibrary) — this links proprietary
+    Vectorworks object code and may not be redistributed without a separate
+    signed agreement with Vectorworks, Inc.
+
+To build the plugin you must obtain your own licensed copy of the Vectorworks
+SDK (via the Vectorworks Developer program) and accept the Vectorworks SDK
+License Agreement. The SDK-derived source files here (plugin/src/ExtMcpBridge.*)
+carry a per-file notice and remain subject to that agreement.
+
+This project is NOT affiliated with, endorsed by, sponsored by, or certified by
+Vectorworks, Inc. "Vectorworks" is a trademark of Vectorworks, Inc., used here
+only to identify the software this tool works with.

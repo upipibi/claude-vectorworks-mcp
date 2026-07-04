@@ -1,0 +1,28 @@
+# --- Build output ---
+/target
+**/target/
+
+# --- Compiled binaries: never publish ---
+# The Rust binary embeds local build paths; the plugin binary links proprietary
+# Vectorworks object code (redistribution breaches the SDK license). Everyone
+# builds their own from source.
+/bin/
+**/*.vwlibrary
+**/*.vwlibrary/
+
+# --- Vectorworks SDK: never publish confidential headers or SDK-derived output ---
+**/SDKLib/
+**/VectorworksSDK/
+**/*VWMM*
+**/*.vwr/
+
+# --- Internal / non-public working notes ---
+SESSION-HANDOFF.md
+*-HANDOFF.md
+
+# --- macOS / editor cruft ---
+.DS_Store
+.vscode/
+.idea/
+**/xcuserdata/
+.playwright-mcp/
