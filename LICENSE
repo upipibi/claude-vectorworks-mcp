@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
---------------------------------------------------------------------------------
-
-NOTE ON SCOPE: This MIT license covers the original code in this repository and
-the portions derived from mako-357/vectorworks-mcp (also MIT). It does NOT cover
-the Vectorworks SDK, and it does NOT re-license the Vectorworks-SDK-derived
-plugin source files (plugin/src/ExtMcpBridge.*), which remain subject to the
-Vectorworks SDK License Agreement. See NOTICE for details.
